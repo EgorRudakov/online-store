@@ -1,1 +1,16 @@
+//Import all of Bootstrap's Scss
+@import '~bootstrap/scss/bootstrap';
 
+//Base
+@import './base/normalize';
+@import './base/fonts';
+@import './base/mixin';
+@import './base/media';
+@import './base/variables';
+@import './base/utils';
+@import './base/globals';
+
+//Blocks
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/footer';
