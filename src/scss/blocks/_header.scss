@@ -1,0 +1,39 @@
+/*  =================== Block _Header =================== */
+.header-top .btn {
+	background-color: #fff;
+}
+
+.header-top-phone a {
+	display: block;
+	text-decoration: none;
+}
+
+.header-top-phone a:hover {
+	text-decoration: underline;
+}
+
+.social-icon {
+	margin-bottom: 0;
+	padding: 0;
+
+	li {
+		margin-right: 10px;
+	}
+
+	a {
+		background-color: var(--accent-color);
+		color: var(--contrast-color);
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		float: left;
+		text-align: center;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: var(--contrast-color);
+			color: var(--accent-color);
+		}
+	}
+}

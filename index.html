@@ -4,15 +4,93 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon/icons8-sink-32.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
 		<title>JS Vite-v5 Template</title>
 	</head>
 	<body>
-		<div id="app">
-			<div class="container py-4 px-3 mx-auto">
-				<h1>Hello, Bootstrap and Vite!</h1>
-				<button class="btn btn-primary">Primary button</button>
-			</div>
-			<header class="header">Header</header>
+		<div id="app" class="wrapper">
+			<header class="header">
+				<div class="header-top py-1">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-6 col-sm-4">
+								<div class="header-top-phone d-flex align-items-center h-100">
+									<i class="fa-solid fa-mobile-screen"></i>
+									<a class="ms-2" href="tel:+123456789">123-456-789</a>
+								</div>
+							</div>
+
+							<div class="col-sm-4 d-none d-sm-block">
+								<ul class="social-icon d-flex justify-content-center">
+									<li>
+										<a href="#"><i class="fa-brands fa-youtube"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa-brands fa-instagram"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-4">
+								<div class="header-top-account d-flex justify-content-end">
+									<div class="btn-group me-2">
+										<div class="dropdown">
+											<button
+												class="btn btn-sm dropdown-toggle"
+												type="button"
+												id="dropdownMenuButton1"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Account
+											</button>
+											<ul
+												class="dropdown-menu"
+												aria-labelledby="dropdownMenuButton1"
+											>
+												<li><a class="dropdown-item" href="#">Sing In</a></li>
+												<li>
+													<a class="dropdown-item" href="#">Sing Up</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="btn-group">
+										<div class="dropdown">
+											<button
+												class="btn btn-sm dropdown-toggle"
+												type="button"
+												id="dropdownMenuButton1"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												EN
+											</button>
+											<ul
+												class="dropdown-menu"
+												aria-labelledby="dropdownMenuButton1"
+											>
+												<li><a class="dropdown-item" href="#">RU</a></li>
+												<li>
+													<a class="dropdown-item" href="#">DE</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- ./header-top-account -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-middle bg-white py-2">Middle</div>
+			</header>
 			<main class="main">Content</main>
 			<footer class="footer">Footer</footer>
 		</div>

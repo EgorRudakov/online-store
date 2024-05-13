@@ -1,4 +1,8 @@
-// Импортируйте Bootstrap CSS
-import '../scss/_style.scss'
+// Импорт Bootstrap Css
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-// Импортируйте Bootstrap JavaScript
+// Импорт Bootstrap JavaScript
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+// Импорт _Style.scss
+import '../scss/_style.scss'

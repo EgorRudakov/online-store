@@ -1,0 +1,33 @@
+/* =================== Base _Globals =================== */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	min-width: 320px;
+	font-family: var(--ff-base);
+	font-weight: var(--fw-regular);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--text-color);
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn,
+.dropdown-menu {
+	border-radius: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
