@@ -22,8 +22,38 @@ a:hover {
 }
 
 .btn,
-.dropdown-menu {
+.dropdown-menu,
+.form-control {
 	border-radius: 0;
+}
+
+.form-control {
+	&:focus {
+		color: var(--text-color);
+		border-color: var(--accent-color);
+		box-shadow: none;
+	}
+
+	&::placeholder {
+		color: var(--crl-lightGray);
+	}
+}
+
+.btn-warning {
+	background-color: var(--accent-color);
+	color: var(--contrast-color);
+}
+.btn-outline-warning {
+	border-color: var(--accent-color);
+
+	&:hover {
+		background-color: var(--accent-color);
+		color: var(--contrast-color);
+	}
+}
+
+.bg-warning {
+	background-color: var(--accent-color) !important;
 }
 
 .wrapper {
