@@ -40,7 +40,7 @@
 
 .header-logo {
 	text-decoration: none;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	color: var(--accent-color);
 	transition: all 0.3s;
 
@@ -55,5 +55,37 @@
 
 	&:hover {
 		border: 1px solid var(--contrast-color);
+	}
+}
+
+.header-bottom {
+	border-top: 3px solid var(--accent-color);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+	.navbar,
+	.dropdown-menu {
+		background-color: var(--contrast-color) !important;
+	}
+
+	.navbar .nav-link {
+		color: #fff;
+		transition: 0.3s all;
+		letter-spacing: 0.1rem;
+
+		&:hover {
+			color: var(--accent-color);
+		}
+
+		&.active {
+			color: var(--accent-color);
+		}
+
+		&--no-padding {
+			padding-left: 0;
+		}
+	}
+
+	.navbar .dropdown-menu {
+		margin-top: 7px;
 	}
 }
