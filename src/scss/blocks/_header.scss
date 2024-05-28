@@ -1,91 +1,91 @@
 /*  =================== Block _Header =================== */
 .header-top .btn {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 .header-top-phone a {
-	display: block;
-	text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 .header-top-phone a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .social-icon {
-	margin-bottom: 0;
-	padding: 0;
+  margin-bottom: 0;
+  padding: 0;
 
-	li {
-		margin-right: 10px;
-	}
+  li {
+    margin-right: 10px;
+  }
 
-	a {
-		background-color: var(--accent-color);
-		color: var(--contrast-color);
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		border-radius: 50%;
-		float: left;
-		text-align: center;
-		transition: all 0.3s;
+  a {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    transition: all 0.3s;
 
-		&:hover {
-			background-color: var(--contrast-color);
-			color: var(--accent-color);
-		}
-	}
+    &:hover {
+      background-color: var(--contrast-color);
+      color: var(--accent-color);
+    }
+  }
 }
 
 .header-logo {
-	text-decoration: none;
-	// text-transform: uppercase;
-	color: var(--accent-color);
-	transition: all 0.3s;
+  text-decoration: none;
+  // text-transform: uppercase;
+  color: var(--accent-color);
+  transition: all 0.3s;
 
-	&:hover {
-		color: var(--contrast-color);
-	}
+  &:hover {
+    color: var(--contrast-color);
+  }
 }
 
 .cart-buttons .btn {
-	color: var(--contrast-color);
-	transition: all 0.3s;
+  color: var(--contrast-color);
+  transition: all 0.3s;
 
-	&:hover {
-		border: 1px solid var(--contrast-color);
-	}
+  &:hover {
+    border: 1px solid var(--contrast-color);
+  }
 }
 
 .header-bottom {
-	border-top: 3px solid var(--accent-color);
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-top: 3px solid var(--accent-color);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
-	.navbar,
-	.dropdown-menu {
-		background-color: var(--contrast-color) !important;
-	}
+  .navbar,
+  .dropdown-menu {
+    background-color: var(--contrast-color) !important;
+  }
 
-	.navbar .nav-link {
-		color: #fff;
-		transition: 0.3s all;
-		letter-spacing: 0.1rem;
+  .navbar .nav-link {
+    color: #fff;
+    transition: 0.3s all;
+    letter-spacing: 0.1rem;
 
-		&:hover {
-			color: var(--accent-color);
-		}
+    &:hover {
+      color: var(--accent-color);
+    }
 
-		&.active {
-			color: var(--accent-color);
-		}
+    &.active {
+      color: var(--accent-color);
+    }
 
-		&--no-padding {
-			padding-left: 0;
-		}
-	}
+    &--no-padding {
+      padding-left: 0;
+    }
+  }
 
-	.navbar .dropdown-menu {
-		margin-top: 7px;
-	}
+  .navbar .dropdown-menu {
+    margin-top: 7px;
+  }
 }
