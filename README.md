@@ -1,5 +1,7 @@
 # Online Store Project
 
+## Technologies Used (Project in Development)
+
 This is a sample online store project created with Vite and Bootstrap.
 
 ## Project Description
@@ -16,7 +18,7 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/egorrudakov/online-store.git
+   git clone https://github.com/egorrudakov/online-store.git 
 
 2. **Install dependencies**:
    ```bash
@@ -32,15 +34,7 @@ To get a local copy up and running, follow these simple steps:
    ```bash
    npm run build
 
-## Technologies Used
-
-- Vite (v5.1.4)
-- Bootstrap (v5.3.3)
-- JavaScript
-- HTML
-- Scss (v1.77.2)
-
-##Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
