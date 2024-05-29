@@ -28,21 +28,24 @@ To get a local copy up and running, follow these simple steps:
 
 ## Building
 
-**To create a production build, use the following command**:
-  npm run build
+4. **To create a production build, use the following command**:
+   ```bash
+   npm run build
 
 ## Technologies Used
 
-- Vite
-- Bootstrap
+- Vite (v5.1.4)
+- Bootstrap (v5.3.3)
 - JavaScript
 - HTML
-- CSS
+- Scss (v1.77.2)
 
 ##Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
+## Contact
 
+For any questions or support, please contact egor.rudakov90@gmail.com
 
   
