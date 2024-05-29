@@ -1,23 +1,26 @@
 {
-	"name": "vite-v5-js",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"@types/bootstrap": "^5.2.10",
-		"prettier": "^3.2.5",
-		"sass": "^1.77.2",
-		"vite": "^5.1.4"
-	},
-	"dependencies": {
-		"@popperjs/core": "^2.11.8",
-		"bootstrap": "^5.3.3",
-		"normalize-scss": "^8.0.0",
-		"path": "^0.12.7"
-	}
+  "name": "vite-v5-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.2",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "normalize-scss": "^8.0.0",
+    "path": "^0.12.7"
+  }
 }
