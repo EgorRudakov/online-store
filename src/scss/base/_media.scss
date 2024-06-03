@@ -6,3 +6,17 @@ $tablet: 1023px;
 
 $mobile-above: 768px;
 $mobile: 767px;
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}

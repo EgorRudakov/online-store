@@ -1,0 +1,15 @@
+.btn-outline-info {
+  --bs-btn-color: #4a4a4a;
+  --bs-btn-border-color: #2c3e50;
+  --bs-btn-hover-bg: #f0f4f7;
+  --bs-btn-hover-border-color: #2c3e50;
+  --bs-btn-active-bg: #f0f4f7;
+  --bs-btn-active-border-color: #2c3e50;
+  --bs-btn-disabled-color: #4a4a4a;
+  --bs-btn-disabled-border-color: #2c3e50;
+  --bs-btn-active-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    --bs-btn-border-color: #00b2a9;
+  }
+}

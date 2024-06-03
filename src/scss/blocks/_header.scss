@@ -12,39 +12,12 @@
   text-decoration: underline;
 }
 
-.social-icon {
-  margin-bottom: 0;
-  padding: 0;
-
-  li {
-    margin-right: 10px;
-  }
-
-  a {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    float: left;
-    text-align: center;
-    transition: all 0.3s;
-
-    &:hover {
-      background-color: var(--contrast-color);
-      color: var(--accent-color);
-    }
-  }
-}
-
 .header-logo {
   text-decoration: none;
-  // text-transform: uppercase;
   color: var(--accent-color);
   transition: all 0.3s;
 
-  &:hover {
+  @include hover {
     color: var(--contrast-color);
   }
 }
@@ -53,7 +26,7 @@
   color: var(--contrast-color);
   transition: all 0.3s;
 
-  &:hover {
+  @include hover {
     border: 1px solid var(--contrast-color);
   }
 }
@@ -72,7 +45,7 @@
     transition: 0.3s all;
     letter-spacing: 0.1rem;
 
-    &:hover {
+    @include hover {
       color: var(--accent-color);
     }
 

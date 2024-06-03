@@ -17,14 +17,20 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
-  text-decoration: none;
+a {
+  @include hover {
+    text-decoration: none;
+  }
 }
 
 .btn,
 .dropdown-menu,
 .form-control {
   border-radius: 0;
+}
+
+.btn {
+  --bs-btn-focus-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .form-control {
@@ -43,13 +49,14 @@ a:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
+
 .btn-outline-info {
   border-color: var(--accent-color);
 
-  &:hover {
-    border-color: var(--crl-lightGray);
+  @include hover {
+    border-color: var(--crl-lightGray) !important;
     background-color: var(--accent-color) !important;
-    color: var(--contrast-color);
+    color: var(--contrast-color) !important;
   }
 }
 
