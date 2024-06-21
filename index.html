@@ -106,7 +106,7 @@
 
               <div class="col-6 col-md-4 order-md-2 cart-buttons text-end">
                 <a href="#" class="btn p-1">
-                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart fa-heart--hover-cl"></i>
                   <span
                     class="badge text-bg-info cart-badge bg-info rounded-circle"
                     >3</span
@@ -120,7 +120,9 @@
                   data-bs-target="#offcanvasCart"
                   aria-controls="offcanvasCart"
                 >
-                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i
+                    class="fa-solid fa-cart-shopping fa-cart-shopping--hover-cl"
+                  ></i>
                   <span
                     class="badge text-bg-info cart-badge bg-info rounded-circle"
                     >5</span
@@ -202,7 +204,7 @@
         </div>
         <!-- ./header-middle -->
       </header>
-      <div class="header-bottom sticky-top">
+      <div class="header-bottom sticky-top" id="header-nav">
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
           <div class="container-fluid">
             <button
@@ -482,53 +484,342 @@
           </button>
         </div>
 
-        <section class="advantages">
+        <section class="featured-products">
           <div class="container-fluid">
-            <div class="row">
+            <div class="row mb-5">
               <div class="col-12">
                 <h2 class="section-title">
-                  <span>Наши преимущества</span>
+                  <span>Рекомендуемые товары</span>
                 </h2>
               </div>
             </div>
 
-            <div class="items">
-              <div class="row gy-3">
-                <div class="col-lg-3 col-sm-6">
-                  <div class="item">
-                    <p>
-                      <i class="fas fa-shipping-fast"></i>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                    <div class="offer-new">New</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/images/featured products/image 1.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        O-mebel зеркальный шкаф со светом Лотос
+                      </a>
+                    </h4>
+                    <p class="product-excerpt">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Placeat, aperiam!
                     </p>
-                    <p>Прямые поставки от производителей брендов</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-lg-3 col-sm-6">
-                  <div class="item">
-                    <p>
-                      <i class="fas fa-cubes"></i>
-                    </p>
-                    <p>
-                      Широкий ассортимент товаров. Более 10 тыс. наименований
-                    </p>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 2.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        Orange Berti M17-021cr однорычажный смеситель для
+                        раковины без донного клапана
+                      </a>
+                    </h4>
+                    <p class="product-excerpt">Lorem ipsum dolor</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">$65</div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-lg-3 col-sm-6">
-                  <div class="item">
-                    <p>
-                      <i class="fas fa-hand-holding-usd"></i>
-                    </p>
-                    <p>Приятные и конкурентные цены</p>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <!-- <div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div> -->
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 3.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        Orange Berti M17-100cr однорычажный ванно-душевой
+                        смеситель
+                      </a>
+                    </h4>
+                    <p class="product-excerpt">Lorem ipsum</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">$100</div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-lg-3 col-sm-6">
-                  <div class="item">
-                    <p>
-                      <i class="fa-solid fa-user-graduate"></i>
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 4.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html"> Ручной душ O-Shower OS05 </a>
+                    </h4>
+                    <p class="product-excerpt">Lorem ipsum dolor</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                    <div class="offer-new">New</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 5.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        Orange Flipo M23-021cr однорычажный смеситель для
+                        раковины без донного...
+                      </a>
+                    </h4>
+                    <p class="product-excerpt">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Placeat, aperiam!
                     </p>
-                    <p>Консультации от профессионалов</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                    <div class="offer-new">New</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 6.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        O-mebel Зеркальный шкаф Классик 85 орех
+                      </a>
+                    </h4>
+                    <p class="product-excerpt"></p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                    <div class="offer-new">New</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 7.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">Тумба подвесная "Sole"</a>
+                    </h4>
+                    <p class="product-excerpt">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Placeat, aperiam!
+                    </p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-card-offer">
+                    <div class="offer-hit">Hit</div>
+                    <div class="offer-new">New</div>
+                  </div>
+                  <div class="product-thumb">
+                    <a href="product.html">
+                      <img
+                        src="/public/images/featured products/image 8.jpeg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product-details">
+                    <h4>
+                      <a href="products.html">
+                        Orange Berti M17-211cr однорычажный смеситель для
+                        ванны/душа
+                      </a>
+                    </h4>
+                    <p class="product-excerpt">Lorem ipsum dolor</p>
+                    <div
+                      class="product-bottom-details d-flex justify-content-between"
+                    >
+                      <div class="product-price">
+                        <small>$70</small>
+                        $65
+                      </div>
+                      <div class="product-links">
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary add-to-cart"
+                        >
+                          <i class="fas fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

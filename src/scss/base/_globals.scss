@@ -31,6 +31,11 @@ a {
 
 .btn {
   --bs-btn-focus-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  .badge {
+    position: relative;
+    top: -10px;
+  }
 }
 
 .form-control {
@@ -61,7 +66,8 @@ a {
 }
 
 .bg-info {
-  background-color: var(--accent-color) !important;
+  background-color: var(--bg-color) !important;
+  border: 1px solid var(--accent-color);
 }
 
 .wrapper {
@@ -72,4 +78,26 @@ a {
 
 section {
   padding: 50px 0;
+}
+
+.section-title {
+  position: relative;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+  font-weight: 700;
+
+  & span {
+    background-color: var(--bg-color);
+    padding-right: 1rem;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: -1;
+  }
 }

@@ -19,7 +19,7 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    transition: all 0.3s;
+    transition: all 0.5s;
     text-decoration: none;
   }
 
@@ -47,6 +47,30 @@
 
     @include hover {
       background: linear-gradient(45deg, #e1306c, #ff69b4);
+    }
+  }
+}
+
+.cart-buttons .btn {
+  @include hover {
+    .fa-heart--hover-cl {
+      color: #ff3737;
+    }
+
+    .fa-cart-shopping--hover-cl {
+      color: var(--accent-color);
+    }
+  }
+
+  &:active {
+    //?--------------------
+    border-bottom: 1px solid var(--accent-color);
+    .fa-heart--hover-cl {
+      color: #bd0808d3;
+    }
+
+    .fa-cart-shopping--hover-cl {
+      color: #046e69;
     }
   }
 }

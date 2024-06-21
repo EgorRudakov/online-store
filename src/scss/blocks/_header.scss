@@ -27,7 +27,6 @@
   transition: all 0.3s;
 
   @include hover {
-    border: 1px solid var(--contrast-color);
   }
 }
 
@@ -60,5 +59,12 @@
 
   .navbar .dropdown-menu {
     margin-top: 7px;
+  }
+}
+
+.headernav-scroll.header-bottom {
+  .navbar .offcanvas:not(.show) .nav-link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 }
