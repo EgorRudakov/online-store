@@ -3,13 +3,17 @@
   background-color: #fff;
 }
 
-.header-top-phone a {
-  display: block;
-  text-decoration: none;
-}
+.header-top-phone {
+  a {
+    display: block;
+    text-decoration: none;
+  }
 
-.header-top-phone a:hover {
-  text-decoration: underline;
+  @include hover {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 .header-logo {
@@ -18,16 +22,17 @@
   transition: all 0.3s;
 
   @include hover {
-    color: var(--contrast-color);
+    color: var(--sea-green);
+  }
+
+  &:active {
+    color: var(--accent-color);
   }
 }
 
 .cart-buttons .btn {
   color: var(--contrast-color);
   transition: all 0.3s;
-
-  @include hover {
-  }
 }
 
 .header-bottom {

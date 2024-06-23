@@ -63,11 +63,15 @@ a {
     background-color: var(--accent-color) !important;
     color: var(--contrast-color) !important;
   }
+
+  &:active {
+    background-color: var(--sea-green) !important;
+  }
 }
 
 .bg-info {
   background-color: var(--bg-color) !important;
-  border: 1px solid var(--accent-color);
+  border: 0.5px solid var(--accent-color);
 }
 
 .wrapper {

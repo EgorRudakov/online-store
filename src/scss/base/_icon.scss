@@ -52,6 +52,8 @@
 }
 
 .cart-buttons .btn {
+  border: none;
+
   @include hover {
     .fa-heart--hover-cl {
       color: #ff3737;
@@ -63,14 +65,12 @@
   }
 
   &:active {
-    //?--------------------
-    border-bottom: 1px solid var(--accent-color);
     .fa-heart--hover-cl {
-      color: #bd0808d3;
+      color: var(--crimson-punch);
     }
 
     .fa-cart-shopping--hover-cl {
-      color: #046e69;
+      color: var(--sea-green);
     }
   }
 }
