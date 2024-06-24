@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-inject": "^5.0.5",
     "@types/bootstrap": "^5.2.10",
     "gh-pages": "^6.1.1",
     "prettier": "^3.2.5",

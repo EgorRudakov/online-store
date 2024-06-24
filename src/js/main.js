@@ -1,11 +1,14 @@
-// Импорт Bootstrap Css
+// Инициализация Owl Carousel после загрузки страницы
+import './libs/jquery'
+
+// Импорт Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Импорт Bootstrap JavaScript
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-// Импорт _Style.scss
+// Импорт пользовательских стилей
 import '../scss/_style.scss'
 
-// Импорт JS
-import './scrolls'
+// Импорт пользовательских модулей JavaScript
+import './modules/scrolls'

@@ -1,4 +1,5 @@
-import { resolve } from 'path'
+import babel from '@rollup/plugin-babel'
+import { resolve } from 'path' // Импортируем resolve из модуля path
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -13,6 +14,16 @@ export default defineConfig({
     sourcemap: true,
   },
   build: {
-    outDir: 'dist',
+    rollupOptions: {
+      plugins: [
+        babel({
+          babelHelpers: 'bundled', // Или 'runtime' если используете @babel/runtime
+          presets: ['@babel/preset-env'],
+          plugins: [
+            // Добавьте сюда дополнительные Babel плагины, если необходимо
+          ],
+        }),
+      ],
+    },
   },
 })
