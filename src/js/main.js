@@ -11,4 +11,5 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import '../scss/_style.scss'
 
 // Импорт пользовательских модулей JavaScript
+import './modules/back-to-top'
 import './modules/scrolls'

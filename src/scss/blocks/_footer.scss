@@ -1,1 +1,28 @@
 /*  =================== Block _Footer =================== */
+footer {
+  background-color: var(--contrast-color);
+  padding: 50px 0;
+  color: #fff;
+
+  h4 {
+    color: var(--accent-color);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  font-size: 20px;
+}
