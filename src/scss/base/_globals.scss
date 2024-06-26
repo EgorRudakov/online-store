@@ -93,6 +93,8 @@ section {
   & span {
     background-color: var(--bg-color);
     padding-right: 1rem;
+    position: relative;
+    z-index: 1;
   }
 
   &::after {
@@ -102,6 +104,5 @@ section {
     top: 50%;
     left: 0;
     border-top: 1px dashed var(--text-color);
-    z-index: -1;
   }
 }
